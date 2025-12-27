@@ -1,5 +1,33 @@
-Esse é o meu primeiro arquivo git
+comandos iniciais do git:
 
-aqui está uma alteração
+pwd ---> mostra o caminho de onde você se encontra atualmente
+ls ---> mostra todos os arquivos de onde você se encontra
+cd caminho ---> se locomove para o caminho requerido
+git init . ---> torna a pasta atual um repositório do git
+git add . ---> prepara um arquivo ou a pasta inteira para ser commitada (commitar é como um save)
+git status ---> verifica o status dos documentos (se tem algo pendente para ser commitado, se uma arquivo foi alterado, etc
+git commit (nome do arquivo ou "." para a pasta toda) -m "msg" ---> cria um save com o estado atual de todos os arquivos
+git log ---> mostra todos os commits
+git checkout -b "nome da nova branch" ---> cria uma nova branch e se desloca para ela
+git checkout "nome da branch" ---> se desloca para a branch requerida
+git merge ---> mescla as alterações da branch requerida e a branch atual
+git push envia um pull request para o admin do projeto aceitar o merge entre a branch requerida e a branch main
 
-Essa alteração foi feita na branch main
+conceitos:
+
+commit ---> é salvar os arquivos no estado atual deles
+branch ---> é o nome do save, por exemplo: "branch main" sempre vai ser o save principal e outras branches 
+sempre vão ser feitas para testar tudo que queremos antes de trazer as alterações para o save principal
+
+## Fluxo de trabalho
+
+1. Criar a pasta onde o projeto será feito
+2. git init .  para startar o repositório git
+3. Criar ou alterar arquivos
+4. git status para verificar o estado atual dos arquivos
+5. git add . para preparar os arquivos para o save
+6. git status para verificar o estado atual dos arquivos
+7. git commit -m "msg" para salvar os arquivos
+8. git status para verificar o estado atual dos arquivos
+9. retornar para o passo 3
+ 
